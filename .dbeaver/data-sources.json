@@ -1,0 +1,37 @@
+{
+	"folders": {},
+	"connections": {
+		"mariaDB-1935752c268-245415ac45b6e01c": {
+			"provider": "mysql",
+			"driver": "mariaDB",
+			"name": "localhost",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"url": "jdbc:mariadb://localhost:3306/",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
+		}
+	},
+	"virtual-models": {"mariaDB-1935752c268-245415ac45b6e01c":{"cardb":{":car":{"properties":{"erd.diagram.state":{"serialized":"\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202411222254\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"mariaDB-1935752c268-245415ac45b6e01c\"\u003e\u003centity id\u003d\"1\" name\u003d\"car\" fq-name\u003d\"cardb.car\" order\u003d\"0\" color-bg\u003d\"255,128,64\" font\u003d\"Segoe UI:9:0\" x\u003d\"40\" y\u003d\"40\"\u003e\u003cpath name\u003d\"cardb\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"2\" name\u003d\"owner\" fq-name\u003d\"cardb.owner\" order\u003d\"1\" font\u003d\"Segoe UI:9:0\" x\u003d\"398\" y\u003d\"47\"\u003e\u003cpath name\u003d\"cardb\"/\u003e\u003c/entity\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations\u003e\u003crelation name\u003d\"FK2mqqwvxtowv4vddvtsmvtiqa2\" fq-name\u003d\"cardb.car.FK2mqqwvxtowv4vddvtsmvtiqa2\" type\u003d\"fk\" pk-ref\u003d\"2\" fk-ref\u003d\"1\"/\u003e\u003c/relations\u003e\u003c/diagram\u003e"}}}}}},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}
